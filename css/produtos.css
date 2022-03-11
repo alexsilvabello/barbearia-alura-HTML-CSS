@@ -81,7 +81,7 @@ nav a:hover{
 footer {
     text-align: center;
     padding: 40px 0;
-    background: url(/img/bg.jpg);
+    background: url(../img/bg.jpg);
 }
 
 .copy {

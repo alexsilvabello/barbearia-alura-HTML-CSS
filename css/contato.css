@@ -1,0 +1,109 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78C19;
+    text-decoration: underline;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: url(../img/bg.jpg); /* Fundo do rodapé */
+}
+
+.copy { 
+    color:white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main { 
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend { /* Label e legenda do formulário */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: #BBBBBB;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s; /*transição de 1 segundo de todo o conteúdo do botão, poderia ser somente o background*/
+}
+
+.enviar:hover {
+    background: rgb(92, 91, 91);
+    color: white;
+    transform: scale(1.1); /*aumenta o tamanho do botão*/
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th { /*para criar as linhas da tabela repetivél em duas tags*/
+    padding: 8px 15px;
+    border: 1px solid #000000;
+}

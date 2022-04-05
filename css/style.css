@@ -13,10 +13,6 @@ header {
     margin: 0 auto;
 }
 
-/*main { 
-    width: 940px;
-    margin: 0 auto;
-}*/
 
 nav {
     position: absolute;
@@ -51,6 +47,7 @@ nav a:hover{
     font-size: 2em;
     margin-bottom: 1em;
     clear: left;
+    text-shadow: 2px 2px #BBBBBB; /* Texto com sombra */
 }
 
 .titulo-principal::first-letter { /* Primeira letra do título */
@@ -77,7 +74,7 @@ nav a:hover{
 }
 
 .utensilios {
-    width: 120px;
+    width: 15%;
     float: left;
     margin: 0 20px 20px 0;
 }
@@ -115,6 +112,13 @@ nav a:hover{
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1; /* Para usar a transparência, pode ser usada em todos os elementos inclusive cores Ex: rgba(0,0,0,0.3) */
+    transition: 400ms;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.6); /* Para usar sombra (Eixo X, Eixo Y), opacidade e cor com transparencia*/
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .itens {
@@ -145,3 +149,36 @@ footer {
     font-size: 13px;
     margin-top: 20px;
 }
+
+/* 
+
+Seletores Avançados
+
+Com os seletores avançados do CSS,podemos selecionar os filhos diretos de <main>, para tanto, utilizaremos o sinal >, e todo os outros parágrafos serão ignorados, afinal são filhos diretos da <section> e não de <main>.
+
+main > p {
+    background: red; 
+}
+
+
+Neste caso, usamos img como elemento âncora e para o primeiro irmão usamos o sinal de "+", para o segundo irmão usamos o sinal de "~".
+
+
+img + p { 
+    background: blue;
+
+
+
+img ~ p {
+    background: yellow
+} 
+
+
+No CSS podemos, inclusive, excluir itens específicos. Se quisermos excluir todos os parágrafos que não compõe missao, escreveremos:
+
+.principal p:not(#missao) {
+    background: orange;
+}
+
+*/
+

@@ -111,3 +111,29 @@ td, th { /*para criar as linhas da tabela repetivél em duas tags*/
     padding: 8px 15px;
     border: 1px solid #000000;
 }
+
+
+@media screen and (max-width:820px) { /* Adaptado para Celular */
+    .caixa, .principal, main   {
+        width: auto;
+    }
+    nav {
+        position: static;
+    }
+    nav li {
+        margin: 0 0 0 10px;        
+    }
+    h1 {
+        text-align: center;
+    }
+    form, table {
+        margin: 15px 0 20px 30px;
+    }
+    .enviar {
+        width: 70%;
+    }
+    footer {
+        padding: 100px 0;
+    }
+
+    }
